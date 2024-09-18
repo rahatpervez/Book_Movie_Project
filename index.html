@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book & Movie Lovers</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Book & Movie Lovers</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Books</a></li>
+                <li><a href="movie.html">Movies</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Discover Your Favorite Books & Movies</h1>
+            <p>Explore the world of book-to-movie adaptations.</p>
+            <form class="search-bar">
+                <input type="text" placeholder="Search for books or movies...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section class="features">
+            <div class="feature-box">
+                <h2>Explore Books</h2>
+                <p>Find books that have inspired your favorite movies.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Discover Movies</h2>
+                <p>See movies that have been adapted from bestselling books.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Compare & Review</h2>
+                <p>Compare book-to-movie adaptations and share your thoughts.</p>
+            </div>
+        </section>
+        <!-- Add this Suggestion Section after the rating box in index.html -->
+<section class="suggestions-section">
+    <h1>Suggested Movies & Books</h1>
+    <div class="suggestions-grid">
+        <!-- Book Card Example -->
+        <div class="suggestion-card" onclick="location.href='book-details.html';">
+            <img src="images/book1.jpg" alt="Book 1">
+            <h2>Soul</h2>
+            <p>Author: Olivia Wilson</p>
+        </div>
+
+        <div class="suggestion-card" onclick="location.href='book-details.html';">
+            <img src="images/book2.webp" alt="Book 2">
+            <h2>Book Hide & Seek</h2>
+            <p>Author: Olivia Wilson</p>
+        </div>
+
+        <!-- Movie Card Example -->
+        <div class="suggestion-card" onclick="location.href='movie-details.html';">
+            <img src="images/movie1.jpeg" alt="Movie 1">
+            <h2>Beauty And The Beast</h2>
+            <p>Director: John William</p>
+        </div>
+
+        <div class="suggestion-card" onclick="location.href='movie-details.html';">
+            <img src="images/movie2.jpg" alt="Movie 2">
+            <h2>Thor-The Dark World</h2>
+            <p>Director: Tony Stark</p>
+        </div>
+    </div>
+    <div class="suggestions-grid">
+        <!-- Book Card Example -->
+        <div class="suggestion-card" onclick="location.href='book-details.html';">
+            <img src="images/book3.webp" alt="Book 3">
+            <h2>Young Wizard </h2>
+            <p>Author: Aaron Loeb</p>
+        </div>
+
+        <div class="suggestion-card" onclick="location.href='book-details.html';">
+            <img src="images/book4.jpg" alt="Book 4">
+            <h2>The Ever After</h2>
+            <p>Author: Jodi Lean Anderson</p>
+        </div>
+
+        <!-- Movie Card Example -->
+        <div class="suggestion-card" onclick="location.href='movie-details.html';">
+            <img src="images/movie3.jpeg" alt="Movie 3">
+            <h2>Harry Potter</h2>
+            <p>Director: Md.Rahat Pervez</p>
+        </div>
+
+        <div class="suggestion-card" onclick="location.href='movie-details.html';">
+            <img src="images/movie4.jpg" alt="Movie 4">
+            <h2>The Hobbit</h2>
+            <p>Director: J.R.R Tolkien</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Book & Movie Lovers. All rights reserved.</p>
+    </footer>
+</body>
+</html>

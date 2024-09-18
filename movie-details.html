@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Movie Details</title>
+</head>
+<body>
+    <a href="#" class="back-button" id="back-button">← Back</a>
+
+
+    <!-- Movie Details Section -->
+    <section class="details-section">
+        <h1>Beauty And The Beast</h1>
+        <div class="details-content">
+            <img src="images/movie1.jpeg" alt="Movie 1" class="detail-image">
+            <div class="details-info">
+                <p><strong>Director:</strong> John William</p>
+                <p><strong>Cast:</strong> John, William, Parvez</p>
+                <p><strong>Release Date:</strong> January 10, 2022</p>
+                <p><strong>Genre:</strong> Action/Thriller</p>
+                <p><strong>Synopsis:</strong> This movie is about a thrilling adventure with high stakes, action-packed sequences, and an emotional storyline...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movie Review Section -->
+    <section class="reviews-section">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Reviewer:</strong> Jane Smith</p>
+            <p><strong>Rating:</strong> 4/5</p>
+            <p>A fantastic movie with stunning visuals and gripping storylines...</p>
+        </div>
+        <!-- Add more reviews as needed -->
+    </section>
+    <!-- Review Section -->
+<section class="review-section">
+    <h2>Submit Your Review</h2>
+    <form id="review-form" class="review-form" onsubmit="handleReviewSubmit(event);">
+        <label for="reviewer-name">Your Name:</label>
+        <input type="text" id="reviewer-name" name="reviewer-name" placeholder="Enter your name" required>
+        
+        <label for="review-rating">Rating (1-5):</label>
+        <input type="number" id="review-rating" name="review-rating" min="1" max="5" placeholder="Rate from 1 to 5" required>
+        
+        <label for="review-comment">Comment:</label>
+        <textarea id="review-comment" name="review-comment" rows="4" placeholder="Write your review here" required></textarea>
+        
+        <button type="submit">Submit Review</button>
+    </form>
+    
+    <!-- Existing Reviews -->
+    <div class="reviews-container">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p><strong>Reviewer:</strong> John Doe</p>
+            <p><strong>Rating:</strong> 4/5</p>
+            <p>This book was insightful and well-written...</p>
+        </div>
+        <!-- Add more reviews similarly -->
+    </div>
+</section>
+
+<script>
+    // JavaScript to handle back navigation
+    document.addEventListener('DOMContentLoaded', function() {
+        var backButton = document.getElementById('back-button');
+        if (document.referrer) {
+            backButton.href = document.referrer;
+        } else {
+            backButton.style.display = 'none'; // Hide the button if no referrer
+        }
+    });
+
+    // Handle review form submission
+    function handleReviewSubmit(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Optionally add form submission logic here (e.g., send data to server)
+
+        // Redirect to the previous page
+        window.history.back();
+    }
+</script>
+
+    
+</body>
+</html>

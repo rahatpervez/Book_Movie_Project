@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Movies</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Books</a></li>
+                <li><a href="movie.html">Movies</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="search-section">
+        <h2>Search Movies</h2>
+        <form class="search-form">
+            <input type="text" id="movie-search" placeholder="Search for movies...">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section class="suggestions-section">
+        <h2>Movies</h2>
+        <div class="suggestions-grid">
+            <div class="suggestion-card" onclick="location.href='movie-details.html';">
+                <img src="images/movie1.jpeg" alt="Movie 1">
+                <h2>Beauty And The Beast</h2>
+                <p>Director: John William</p>
+            </div>
+            <div class="suggestion-card" onclick="location.href='movie-details.html';">
+                <img src="images/movie2.jpg" alt="Movie 2">
+                <h2>Thor-The Dark World</h2>
+                <p>Director: Tony Stark</p>
+            </div>
+            <div class="suggestion-card" onclick="location.href='movie-details.html';">
+                <img src="images/movie3.jpeg" alt="Movie 3">
+                <h2>Harry Potter</h2>
+                <p>Director: Md.Rahat Pervez</p>
+            </div>
+            <!-- Add more movies similarly -->
+        </div>
+    </section>
+</body>
+</html>

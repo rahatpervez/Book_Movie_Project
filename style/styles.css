@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with 80% opacity */
+    color: #fff; /* Change text color to white or light colors for contrast */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #575757;
+}
+
+.hero {
+    background: url('../images/background5.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+    background: #575757;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.feature-box {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.book-details, .movie-details {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.book-cover, .movie-poster {
+    max-width: 200px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.reviews {
+    padding: 20px;
+    background: #f8f8f8;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.review {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.comparison {
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.login-section {
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin: 10px 0 5px;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.login-form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+    background: #575757;
+}
+
+.login-section p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-section a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-section a:hover {
+    color: #575757;
+}
+.signup-section {
+    padding: 20px;
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signup-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form label {
+    margin: 10px 0 5px;
+}
+
+.signup-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.signup-form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-form button:hover {
+    background: #575757;
+}
+
+.signup-section p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-section a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.signup-section a:hover {
+    color: #575757;
+}
+
+
+
+/* Suggestion Section Styles */
+.suggestions-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f9f9f9;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Separates the section visually */
+}
+
+.suggestions-section h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Grid for movie and book cards */
+.suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 10px; /* Decrease the space between cards in the same row */
+    row-gap: 40px;    /* Increase the space between rows of cards */
+    justify-items: center;
+}
+
+
+/* Card styles */
+.suggestion-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+}
+
+.suggestion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.suggestion-card h2 {
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.suggestion-card p {
+    padding: 0 10px 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Details Page Style */
+.details-section {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.details-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.detail-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.details-info {
+    flex: 1;
+    font-size: 16px;
+}
+
+.details-info p {
+    margin-bottom: 10px;
+}
+
+/* Review Section */
+.reviews-section {
+    margin-top: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.reviews-section h2 {
+    margin-bottom: 20px;
+}
+
+.review {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.review p {
+    margin-bottom: 10px;
+}
+
+
+.suggestions-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.suggestion-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.suggestion-card img {
+    width: 100%;
+    height: auto;
+}
+
+.suggestion-card h2 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.suggestion-card p {
+    font-size: 14px;
+    margin: 0 10px 10px;
+}
+
+.suggestion-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Search Section */
+.search-section {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Apply the same background to book.html and movie.html as home and login */
+body {
+    background-color: #f4f4f4; /* Ensure this matches the background color of home and login pages */
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Search Bar Styling Consistent with Home Page */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #333;
+}
+
+/* Ensure Suggestion Section Styling Matches */
+.suggestions-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff; /* Ensure this matches the section background color of home */
+}
+
+/* Suggestions Grid Styling */
+.suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.suggestion-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.suggestion-card img {
+    width: 100%;
+    height: auto;
+}
+
+.suggestion-card h2 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.suggestion-card p {
+    font-size: 14px;
+    margin: 0 10px 10px;
+}
+
+.suggestion-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+header {
+    background-color: #333; /* Background color of the nav bar */
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+
+
+/* Back Button Styles */
+.back-button {
+    display: inline-block;
+    background-color: #333; /* Black background */
+    color: #fff;            /* White text */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 20px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #575757; /* Slightly lighter background on hover */
+}
+
+
+
+/* Review Section Styles */
+.review-section {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.review-section h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-form label {
+    margin: 10px 0 5px;
+}
+
+.review-form input,
+.review-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.review-form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.review-form button:hover {
+    background: #575757;
+}
+
+/* Existing Reviews */
+.reviews-container {
+    margin-top: 20px;
+}
+
+.review {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.review p {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
